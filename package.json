@@ -1,0 +1,15 @@
+{
+  "name": "graneet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "start": "pnpm --stream -r run start",
+    "start:dev": "pnpm --stream -r run start:dev",
+    "init": "pnpm --filter api start:database"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

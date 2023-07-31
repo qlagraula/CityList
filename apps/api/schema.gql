@@ -1,0 +1,22 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type CodePostalEntity {
+  id: String!
+  codePostal: String!
+  codeCommune: String!
+  nomCommune: String!
+  libelleAcheminement: String!
+}
+
+type GroupedCodePostals {
+  metropolitan: [CodePostalEntity!]
+  overseas: [CodePostalEntity!]
+}
+
+type Query {
+  sayHello: String!
+  getCodePostals(search: String, skip: Int! = 0, take: Int! = 100): [CodePostalEntity!]!
+  getGroupedCodePostals(search: String, skip: Int! = 0, take: Int! = 100): GroupedCodePostals!
+}
